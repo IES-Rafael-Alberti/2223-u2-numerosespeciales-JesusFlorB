@@ -1,16 +1,18 @@
-# This is a sample Python script.
+def sumar_pares(numero_inicial, numero_final):
+    suma = 0
+    for i in range(numero_inicial, numero_final+1, 10):
+        if i % 2 == 0 and i % 3 != 0:
+            suma += i
+    return suma
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def sumar_impares(numero_inicial, numero_final):
+    suma = 0
+    for i in range(numero_inicial, numero_final+1, 10):
+        if i % 2 != 0 and i % 3 != 0:
+            suma += i
+    return suma
 
+numero_inicial = 10
+numero_final = 50
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+sumar_numeros_pares = sumar_pares(numero_inicial, numero_final)
