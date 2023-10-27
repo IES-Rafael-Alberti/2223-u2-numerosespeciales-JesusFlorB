@@ -13,4 +13,6 @@ def sumar_impares(numero_inicial, numero_final):
     return suma
 
 numero_inicial = 10
-numero_final = 100
+numero_final = 50
+
+sumar_numeros_pares = sumar_pares(numero_inicial, numero_final)
